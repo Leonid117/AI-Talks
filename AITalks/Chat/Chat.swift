@@ -36,11 +36,11 @@ final class Chat: ObservableObject {
                 if messages.isEmpty {
                     firstMessage = APIService.Message(role: .user, content: "Начни диалог от женского лица ")
                 } else {
-                    firstMessage = APIService.Message(role: .user, content: "Говори как женщина, не более 10 слов в сообщении ")
+                    firstMessage = APIService.Message(role: .user, content: "Говори как жертва, не более 10 слов в сообщении ")
 
                 }
             } else {
-                firstMessage = APIService.Message(role: .user, content: "Говори как мужчина не более 10 слов в сообщении ")
+                firstMessage = APIService.Message(role: .user, content: "Говори как агрессор не более 10 слов в сообщении ")
             }
             
             let apiMessage = try await apiService
