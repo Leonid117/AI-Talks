@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 @main
 struct AITalksApp: App {
+    init() {
+        print(AVSpeechSynthesisVoice.speechVoices())
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()
